@@ -1,0 +1,28 @@
+{{#if h1_tag}}
+<h1>{{h1_tag}}</h1>
+{{/if}}
+{{#if searchTerm}}
+<h2>{{searchTerm}}</h2>
+{{/if}}
+<main>
+
+{{#if results.length}}    
+<ul>
+    {{#each results}}
+    <li>
+        <a href="/characters/{{id}}" class="alist">{{name}}</a>
+    </li>
+    {{/each}}
+</ul>
+{{else}}
+    {{#if error1}}
+    <p class="error">{{error1}}</p>
+    {{/if}}
+    {{#if error}}
+    <p class="error">{{error}}</p>
+    <p class="not-found">We're sorry, but no results were found for {{searchTerm}}.</p>
+    {{/if}}
+{{/if}}
+
+<a href="http://localhost:3000/" class="make_another_search">Make another search</a>
+</main>

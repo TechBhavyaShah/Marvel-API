@@ -1,0 +1,19 @@
+{
+  "name": "Marvel API",
+  "version": "1.0.0",
+  "description": "This Website demonstartes the use of Marvel API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Bhavya Shah",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "handlebars": "^4.7.7",
+    "md5": "^2.3.0"
+  }
+}

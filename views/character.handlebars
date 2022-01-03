@@ -1,0 +1,20 @@
+<main>
+<div> 
+  <h1>{{name}}</h1> 
+  <img alt="{{name}}" src="{{img}}.{{ext}}" class="charImg"/>
+  {{#if desc}} 
+  <p><span class="desc">{{{desc}}}</span></p>
+  {{/if}}
+  <h2>Comics</h2>
+  {{#if comics}}
+  <ul class="comic">
+    {{#each comics}}
+    <li><span class="comicName">{{name}}</span></li>
+    {{/each}}
+  </ul>
+  {{else}}
+  <p class="error">Sorry! No comics found for This Character</p>
+  {{/if}}
+</div> 
+<a href="http://localhost:3000/" class="make_another_search">Make another search</a>
+</main>
