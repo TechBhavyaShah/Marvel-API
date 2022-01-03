@@ -16,7 +16,7 @@ We will be using the Marvel API (Links to an external site.).  You will need to 
 You can use the following code to construct the URL. You can read more about AUTHORIZING AND SIGNING REQUESTS from the link below
 
 https://developer.marvel.com/documentation/authorization (Links to an external site.) 
-
+```
 const md5 = require('blueimp-md5');
 const publickey = 'your_public_key(API KEY) from Marvel dev portal';
 const privatekey = 'your private key from Marvel dev portal';
@@ -25,3 +25,4 @@ const stringToHash = ts + privatekey + publickey;
 const hash = md5(stringToHash);
 const baseUrl = 'https://gateway.marvel.com:443/v1/public/characters';
 const url = baseUrl + '?ts=' + ts + '&apikey=' + publickey + '&hash=' + hash;
+```
